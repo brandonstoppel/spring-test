@@ -1,6 +1,7 @@
 package org.bstoppel.service;
 
 import org.bstoppel.adapter.ServiceAdapter;
+import org.bstoppel.annotation.TrackExecutionTime;
 import org.bstoppel.exception.NotImplementedException;
 import org.bstoppel.exception.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,7 @@ public class SomeService {
 		return setting;
 	}
 
+	@TrackExecutionTime
 	public String getAdapterData() {
 		return serviceAdapter.getData();
 	}
