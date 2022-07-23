@@ -15,7 +15,7 @@ public class ControllerAdvisor {
 	@ResponseStatus(HttpStatus.NOT_IMPLEMENTED)
 	@ExceptionHandler(NotImplementedException.class)
 	public void handleUnimplemented() {
-
+		// Not implemented
 	}
 
 	@ExceptionHandler(Exception.class)
